@@ -1,0 +1,1380 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="fav.png">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>STUNES.</title>
+    <style>
+               #navMenu a {
+                   text-decoration: none;
+                   color: white;
+               }
+
+                   #navMenu a:hover {
+                       color: black;
+                   }
+
+               #openNav i {
+                   color: white;
+                   position: absolute;
+                   left: 1%;
+                   font-size: 30px;
+                   top: 2%;
+                   color: white;
+                   opacity: 0.8;
+                   cursor: pointer;
+                   font-size: 30px;
+               }
+
+                   #openNav i:hover {
+                       opacity: 1;
+                   }
+
+               #navMenu {
+                   transition: left 1.5s;
+                   font-size: 0px;
+                   color: white;
+                   top: 30px;
+                   font-family: Roboto;
+                   list-style: none;
+                   text-align: center;
+                   position: absolute;
+                   width: 100%;
+                   font-weight: bold;
+                   letter-spacing: 0px;
+                   line-height: 40px;
+                   float: left;
+                   left: -15%;
+               }
+
+                   #navMenu li {
+                       margin-top: 10px;
+                       cursor: pointer;
+                       letter-spacing: 5px;
+                       transition: letter-spacing 1s;
+                   }
+
+               #nav i {
+                   color: white;
+                   opacity: 0;
+                   filter: brightness(70%);
+                   margin-bottom: 10px;
+                   margin-top: 14px;
+                   cursor: pointer;
+                   font-size: 30px;
+                   transition: filter 2s;
+               }
+
+                   #nav i:hover {
+                       filter: brightness(200%);
+                   }
+
+               #liCurrent {
+                   letter-spacing: 10px;
+                   background-color: white;
+                   color: black;
+                   border-radius: 0px 10px 10px 0px;
+               }
+
+                   #liCurrent a {
+                       text-decoration: none;
+                       color: black;
+                   }
+
+               #navMenu li:hover {
+                   letter-spacing: 10px;
+                   background-color: rgba(255,255,255,0.8);
+                   color: black;
+                   border-radius: 0px 10px 10px 0px;
+               }
+
+               #nav:hover {
+                   opacity: 1;
+               }
+
+               #nav {
+                   position: fixed;
+                   cursor: pointer;
+                   transition: width 1s,opacity 1s;
+                   z-index: 60;
+                   //width: 300px;
+                   background-color: rgba(46, 46, 59,1);
+                   height: 100%;
+                   opacity: 0.9;
+                   border-radius: 0px 5px 5px 0px;
+                   left: 0%;
+                   top: 0%;
+                   width: 0px;
+               }
+
+               html {
+                   background-color: #2E2E3B;
+                   position: relative;
+                   min-height: 100%;
+                   min-width: 100%;
+               }
+
+               @import url(https://fonts.googleapis.com/css?family=Lato);
+               @import url(https://fonts.googleapis.com/css?family=Oswald);
+               @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+               .snip1574 {
+                   z-index: 4;
+                   font-family: 'Lato', Arial, sans-serif;
+                   display: inline-block;
+                   overflow: hidden;
+                   min-width: 250px;
+                   max-width: 310px;
+                   width: 100%;
+                   background-color: #000000;
+                   margin-top: 100px;
+                   text-align: center;
+                   font-size: 16px;
+                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+               }
+
+
+                   .snip1574 * {
+                       -webkit-box-sizing: border-box;
+                       box-sizing: border-box;
+                   }
+
+                   .snip1574 img {
+                       max-width: 100%;
+                       vertical-align: top;
+                       opacity: 0.7;
+                   }
+
+                   .snip1574 figcaption {
+                       position: absolute;
+                       top: 0;
+                       bottom: 0;
+                       left: 0;
+                       right: 0;
+                       padding: 80px 10% 15%;
+                   }
+
+                       .snip1574 figcaption:before {
+                           position: absolute;
+                           font-size: 170px;
+                           opacity: 0.35;
+                           font-style: normal;
+                           -webkit-transform: translateX(-50%);
+                           transform: translateX(-50%);
+                           top: 0px;
+                           left: 50%;
+                       }
+
+                   .snip1574 blockquote {
+                       padding: 0;
+                       margin: 0;
+                       font-style: italic;
+                       font-size: 1.2em;
+                   }
+
+                   .snip1574 h3 {
+                       letter-spacing: 5px;
+                       font-family: 'Oswald', sans-serif;
+                       width: 900px;
+                       text-transform: uppercase;
+                       font-size: 20px;
+                       font-weight: 400;
+                       height: 30px;
+                       background-color: white;
+                       line-height: 24px;
+                       margin-left: 170px;
+                       margin-top: -40px;
+                   }
+
+                   .snip1574 p {
+                       height: 60px;
+                       width: 900px;
+                       background-color: white;
+                       margin-top: 55px;
+                       margin-left: 170px;
+                       font-size: 40px;
+                       border-radius: 10px 10px 0px 0px;
+                       -moz-border-radius: 10px 10px 0px 0px;
+                       -webkit-border-radius: 10px 10px 0px 0px;
+                       border: 0px solid #000000;
+                       font-family: 'Indie Flower', cursive;
+                   }
+
+                   .snip1574 h5 {
+                       width: 900.27px;
+                       height: 30px;
+                       background-color: white;
+                       font-weight: 400;
+                       padding-top: 5px;
+                       margin-top: -20px;
+                       margin-left: 170px;
+                       text-transform: uppercase;
+                       color: black;
+                       letter-spacing: 2px;
+                       border-radius: 0px 0px 10px 10px;
+                       -moz-border-radius: 0px 0px 10px 10px;
+                       -webkit-border-radius: 0px 0px 10px 10px;
+                       border: 0px solid #000000;
+                   }
+
+               .textIntro {
+                   z-index: 3;
+                   opacity: 0.4;
+                   position: absolute;
+                   background: #4AC29A; /* fallback for old browsers */
+                   background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A); /* Chrome 10-25, Safari 5.1-6 */
+                   background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                   text-align: center;
+                   left: 1.12%;
+                   right: 1%;
+                   height: 400px;
+                   width: 98%;
+                   top: 29.4%;
+                   border-radius: 10px 10px 10px 10px;
+                   -moz-border-radius: 10px 10px 10px 10px;
+                   -webkit-border-radius: 10px 10px 10px 10px;
+                   border: 0px solid #000000;
+               }
+
+               @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+               .jquery-background-video-wrapper {
+                   position: relative;
+                   overflow: hidden;
+                   background-position: center center;
+                   background-repeat: no-repeat;
+                   -webkit-background-size: cover;
+                   -moz-background-size: cover;
+                   background-size: cover;
+               }
+
+               .jquery-background-video {
+                   position: absolute;
+                   min-width: 100%;
+                   min-height: 100%;
+                   width: auto;
+                   height: auto;
+                   top: 100%;
+                   left: 50%;
+                   -o-object-fit: contain;
+                   object-fit: contain;
+                   -webkit-transform: translate(-50%,-50%);
+                   -moz-transform: translate(-50%,-50%);
+                   -ms-transform: translate(-50%,-50%);
+                   -o-transform: translate(-50%,-50%);
+                   transform: translate(-50%,-50%);
+               }
+               /**
+        * Fade in videos
+        * Note the .js class - so non js users still
+        * see the video
+        */
+               .js .jquery-background-video {
+                   opacity: 0;
+                   -webkit-transition: opacity 300ms linear;
+                   transition: opacity 300ms linear;
+               }
+
+                   .js .jquery-background-video.is-visible {
+                       opacity: 1;
+                   }
+
+               /**
+        * Pause/play button
+        */
+               .jquery-background-video-pauseplay {
+                   position: absolute;
+                   background: transparent;
+                   border: none;
+                   box-shadow: none;
+                   width: 20px;
+                   height: 20px;
+                   top: 15px;
+                   right: 15px;
+                   padding: 0;
+                   cursor: pointer;
+                   outline: none !important;
+               }
+
+                   .jquery-background-video-pauseplay span {
+                       display: none;
+                   }
+
+                   .jquery-background-video-pauseplay:after,
+                   .jquery-background-video-pauseplay:before {
+                       content: "";
+                       position: absolute;
+                       left: 0;
+                       top: 0;
+                       -webkit-transition: all .3s ease;
+                       transition: all .3s ease;
+                   }
+
+                   .jquery-background-video-pauseplay.play:before {
+                       border-top: 10px solid transparent;
+                       border-bottom: 10px solid transparent;
+                       border-left: 15px solid #FFF;
+                   }
+
+                   .jquery-background-video-pauseplay.pause:before,
+                   .jquery-background-video-pauseplay.pause:after {
+                       border-top: 10px solid #FFF;
+                       border-bottom: 10px solid #FFF;
+                       border-left: 5px solid #FFF;
+                   }
+
+                   .jquery-background-video-pauseplay.pause:after {
+                       left: 10px;
+                   }
+
+               }
+
+               #footerMenu li {
+                   display: inline-block;
+                   margin: 1.6em 2em;
+                   overflow: hidden;
+                   list-style: outside none none;
+                   border-radius: 3px;
+                   position: relative;
+                   left: 19%;
+               }
+
+               #footerMenu a {
+                   padding-right: 19px;
+                   color: #2c3e50;
+                   text-transform: uppercase;
+                   letter-spacing: 3px;
+                   font-size: 18px;
+               }
+
+                   #footerMenu a:hover {
+                       text-transform: uppercase;
+                       letter-spacing: 3px;
+                       font-size: 17px;
+                       color: white;
+                       background-color: #2c3e50;
+                       ;
+                       padding: 10px;
+                       border-bottom: 2px solid #2c3e50;
+                       border-top: 2px solid #2c3e50;
+                       border-right: 2px solid #2c3e50;
+                       border-left: 2px solid #2c3e50;
+                   }
+
+
+
+               #aboutUs {
+                   height: 450px;
+                   z-index: 1;
+                   position: relative;
+                   top: 250px;
+                   right: 0%;
+                   width: 100%;
+                   left: 0%;
+                   -webkit-box-shadow: 5px 10px 28px -14px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 5px 10px 28px -14px rgba(0,0,0,0.75);
+                   box-shadow: 5px 10px 28px -14px rgba(0,0,0,0.75);
+                   z-index: 2;
+                   background-image: url("music/about.jpg");
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   background-position: 0px 100px;
+                   background-attachment: fixed;
+                   background: #0F2027; /* fallback for old browsers */
+                   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
+                   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                   border: 0.5x solid;
+               }
+
+               #hoverr {
+                   z-index: 5;
+                   background-color: white;
+                   opacity: 0;
+                   border: 0.5x solid;
+                   position: relative;
+                   top: -12.5%;
+                   border-radius: 5px;
+               }
+
+                   #hoverr:hover {
+                       cursor: pointer;
+                   }
+
+               .current a {
+                   backface-visibility: hidden;
+                   color: white;
+                   display: block;
+                   padding: 0.5em 1em;
+                   position: relative;
+                   text-align: center;
+                   text-decoration: none;
+               }
+
+
+               .logo {
+                   cursor: pointer;
+                   width: 22%;
+                   height: 12%;
+                   position: absolute;
+                   left: 39.5%;
+                   top: 9%;
+                   right: 30%;
+                   z-index: 4;
+                   padding-top: 0%;
+                   opacity: 0.9;
+                   transition: transform 2s;
+               }
+
+                   .logo:hover {
+                       opacity: 1;
+                       transition-delay: 0.1s;
+                       -ms-transform: rotate(-10deg);
+                       -webkit-transform: rotate(-10deg);
+                       transform: rotate(-10deg);
+                   }
+
+               .adjust {
+                   z-index: 15;
+                   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   border: none;
+                   color: #2E2E3B;
+                   font-weight: bold;
+                   text-transform: uppercase;
+                   font-family: 'Oswald', sans-serif;
+                   border-radius: 10px 10px 10px 10px;
+                   -moz-border-radius: 10px 10px 10px 10px;
+                   -webkit-border-radius: 10px 10px 10px 10px;
+                   border: 0px solid #2c3e50;
+                   padding: 8px;
+                   margin-left: 10px;
+                   max-width: 100px;
+                   min-width: 100px;
+                   position: relative;
+                   margin-top: 24%;
+                   letter-spacing: 2px;
+                   opacity: 0.7;
+               }
+
+                   .adjust:hover {
+                       padding: 5px;
+                       border-bottom: 5px solid white;
+                       cursor: pointer;
+                       opacity: 1;
+                       letter-spacing: 2.5px;
+                   }
+
+               #buttons {
+                   position: relative;
+                   z-index: 7;
+                   width: 1000px;
+                   top: -35px;
+               }
+
+               #countPicture {
+                   -webkit-box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
+                   box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
+                   font-family: 'Oswald', sans-serif;
+                   text-align: center;
+                   background-color: #2c3e50;
+                   color: white;
+                   width: 40px;
+                   padding: 8px;
+                   opacity: 0.7;
+                   border-radius: 10px 0px 10px 0px;
+                   -moz-border-radius: 10px 0px 10px 0px;
+                   -webkit-border-radius: 10px 0px 10px 0px;
+                   border: 0px solid #000000;
+               }
+
+               #bg {
+                   -webkit-box-shadow: 0px 0px 42px 4px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 0px 0px 42px 4px rgba(0,0,0,0.75);
+                   box-shadow: 0px 0px 42px 4px rgba(0,0,0,0.75);
+                   background: #000000; /* fallback for old browsers */
+                   background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+                   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                   height: 57vh;
+                   left: 0%;
+                   width: 100%;
+                   top: 32%;
+                   position: absolute;
+                   overflow: hidden;
+                   filter: brightness(85%);
+               }
+
+                   #bg:hover {
+                       cursor: pointer;
+                   }
+
+                   #bg img {
+                       opacity: 0.5;
+                       border-radius: 10px;
+                       height: 57vh;
+                       width: 30%;
+                       position: absolute;
+                       top: 49.5%;
+                       left: 50%;
+                       transform: translate(-50%,-50%);
+                       z-index: 10;
+                   }
+
+               div#titleSong {
+                   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   filter: brightness(85%);
+                   position: absolute;
+                   z-index: 15;
+                   left: 4 0%;
+                   right: 40%;
+                   top: 56%;
+                   background-color: white;
+                   width: 20%;
+                   height: 8%;
+                   opacity: 0.5;
+                   border-radius: 10px 10px 0px 0px;
+               }
+
+               p#titleText {
+                   filter: brightness(85%);
+                   text-transform: uppercase;
+                   z-index: 16;
+                   position: absolute;
+                   color: #2E2E3B;
+                   left: 30%;
+                   font-weight: bold;
+                   right: 30%;
+                   font-family: 'Oswald', sans-serif;
+                   width: 40%;
+                   top: 51%;
+                   margin-top: 2%;
+                   font-size: 26px;
+                   letter-spacing: 2px;
+                   padding: auto;
+               }
+
+               p#artist {
+                   filter: brightness(85%);
+                   text-transform: uppercase;
+                   z-index: 17;
+                   position: absolute;
+                   color: #2E2E3B;
+                   left: 40%;
+                   border-radius: 0px 0px 10px 10px;
+                   background-color: white;
+                   font-weight: 200;
+                   right: 30%;
+                   letter-spacing: 2px;
+                   padding: 2px;
+                   font-family: 'Oswald', sans-serif;
+                   width: 19.740%;
+                   top: 57.6%;
+                   margin-top: 2%;
+                   font-size: 12px;
+                   padding: auto;
+                   min-height: 12px;
+               }
+
+               #artwork {
+                   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                   filter: brightness(85%);
+                   background-size: cover;
+                   border-radius: 10px;
+                   position: absolute;
+                   z-index: 22;
+                   top: 34.1%;
+                   left: 43%;
+                   right: 43%;
+                   width: 14%;
+                   height: 24vh;
+               }
+
+               #timer {
+                   font-family: 'Oswald', sans-serif;
+                   padding: 3px;
+                   font-size: 13px;
+                   font-weight: 500;
+                   letter-spacing: 1px;
+                   z-index: 22;
+                   color: #2c3e50;
+                   position: absolute;
+                   top: 68.2%;
+                   left: 49%;
+                   right: 49%;
+                   width: 2%;
+                   text-align: center;
+               }
+
+               #container {
+                   background-color: #37353A;
+                   width: 100%;
+                   height: auto;
+                   margin: 0px auto;
+               }
+
+               #seekBar {
+                   z-index: 50;
+                   border-radius: 20px;
+                   opacity: 1;
+                   position: absolute;
+                   top: 60%;
+                   left: 43%;
+                   right: 43%;
+                   width: 14%;
+                   display: flex;
+                   height: 10px;
+                   background-color: rgba(255,255,255,0.8);
+                   cursor: pointer;
+               }
+
+               #fill {
+                   height: 10px;
+                   background-color: rgba(46, 46, 59,1);
+                   border-radius: 20px;
+               }
+
+               #nextSongTitle {
+                   opacity: 0.8;
+                   background-color: rgba(71, 71, 91,0.9);
+                   padding-top: 2px;
+                   padding-bottom: 2px;
+                   position: absolute;
+                   top: 70%;
+                   color: white;
+                   border-radius: 10px 10px 0px 0px;
+                   -moz-border-radius: 10px 10px 0px 0px;
+                   -webkit-border-radius: 10px 10px 0px 0px;
+                   border: 0px solid #000000;
+                   width: 20%;
+                   font-family: Roboto;
+                   font-size: 9px;
+                   text-align: center;
+                   letter-spacing: 1px;
+                   left: 40%;
+                   transition: letter-spacing 1s;
+               }
+
+                   #nextSongTitle:hover {
+                       cursor: pointer;
+                       opacity: 1;
+                       letter-spacing: 1.3px;
+                   }
+
+               #preSongTitle:hover {
+                   cursor: pointer;
+                   opacity: 1;
+                   letter-spacing: 1.3px;
+               }
+
+               #preSongTitle {
+                   transition: letter-spacing 1s;
+                   opacity: 0.8;
+                   background-color: rgba(255,255,255,0.5);
+                   padding-top: 2px;
+                   padding-bottom: 2px;
+                   border-radius: 0px 0px 20px 20px;
+                   -moz-border-radius: 0px 0px 20px 20px;
+                   -webkit-border-radius: 0px 0px 20px 20px;
+                   border: 0px solid #000000;
+                   width: 20%;
+                   color: rgb(71, 71, 91);
+                   text-align: center;
+                   position: absolute;
+                   top: 73.4%;
+                   font-family: Roboto;
+                   font-size: 9px;
+                   letter-spacing: 1px;
+                   left: 40%;
+               }
+
+               #nowplaying {
+                   color: #cd201f;
+                   font-size: 8px;
+                   margin-top: -1%;
+                   position: relative;
+                   margin-bottom: 0%;
+                   transition: letter-spacing 2s;
+               }
+
+               @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+                   html {
+                       background-color: #2E2E3B;
+                       position: relative;
+                       min-height: 100%;
+                       min-width: 100%;
+                   }
+
+
+                   #openNav i {
+                       color: white;
+                       position: absolute;
+                       left: 5%;
+                       font-size: 30px;
+                       top: 6%;
+                       color: white;
+                       opacity: 0.8;
+                       cursor: pointer;
+                       font-size: 60px;
+                   }
+
+                   #nav {
+                       position: fixed;
+                       transition: width 1.5s;
+                       z-index: 60;
+                       //width: 300px;
+                       background-color: rgba(46, 46, 59,0.9);
+                       height: 100%;
+                       border-radius: 0px 5px 5px 0px;
+                       left: 0%;
+                       top: 0%;
+                       width: 0px;
+                   }
+
+                   #openNav i {
+                       color: white;
+                       position: absolute;
+                       left: 1%;
+                       font-size: 30px;
+                       top: 0%;
+                       color: white;
+                       opacity: 0.8;
+                       cursor: pointer;
+                       font-size: 100px;
+                   }
+
+                   #nav i {
+                       color: white;
+                       opacity: 0;
+                       filter: brightness(70%);
+                       margin-bottom: 10px;
+                       margin-top: 14px;
+                       cursor: pointer;
+                       font-size: 100px;
+                       transition: filter 2s;
+                   }
+
+
+                   #openNav i:hover {
+                       opacity: 1;
+                   }
+
+                   #navMenu {
+                       transition: left 1.5s;
+                       font-size: 0px;
+                       color: white;
+                       top: 100px;
+                       font-family: Roboto;
+                       list-style: none;
+                       text-align: center;
+                       position: absolute;
+                       width: 100%;
+                       font-weight: bold;
+                       letter-spacing: 0px;
+                       line-height: 100px;
+                       float: left;
+                       left: -15%;
+                   }
+
+                   #container {
+                       background-color: #2E2E3B;
+                       overflow-y: hidden;
+                       overflow-x: hidden;
+                       position: absolute;
+                       margin: 0px auto;
+                       width: 390%;
+                       height: 391%;
+                   }
+
+
+                   #artwork {
+                       -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       filter: brightness(100%);
+                       background-size: cover;
+                       background-position: 50% 40%;
+                       border-radius: 10px;
+                       z-index: 22;
+                       top: 61%;
+                       margin-top: 0%;
+                       margin-bottom: 10%;
+                       left: 20%;
+                       right: 20%;
+                       width: 60%;
+                       position: absolute;
+                       height: 32% !important;
+                   }
+
+                   .logo {
+                       -webkit-box-shadow: -1px 10px 11px -3px rgba(0,0,0,0.75);
+                       -moz-box-shadow: -1px 10px 11px -3px rgba(0,0,0,0.75);
+                       box-shadow: -1px 10px 11px -3px rgba(0,0,0,0.75);
+                       width: 18%;
+                       height: 5%;
+                       position: relative;
+                       left: 1%;
+                       z-index: 4;
+                       padding-top: 0%;
+                       opacity: 1;
+                       border-radius: 20px;
+                   }
+
+                   #bg {
+                       border-radius: 0px 0px 0px 0px;
+                       border: 5px solid rgba(0,0,0,0.5);
+                       height: 110%;
+                       left: -0.5%;
+                       width: 100%;
+                       top: 9%;
+                       position: absolute;
+                       filter: brightness(85%);
+                   }
+
+
+                   .adjust {
+                       z-index: 15;
+                       background-color: rgba(46, 46, 59,1);
+                       color: white;
+                       font-weight: 500;
+                       text-transform: uppercase;
+                       font-family: 'Oswald', sans-serif;
+                       border-radius: 10px 10px 10px 10px;
+                       -moz-border-radius: 10px 10px 10px 10px;
+                       -webkit-border-radius: 10px 10px 10px 10px;
+                       border: 0px solid #000000;
+                       padding: 0%;
+                       left: -1.5%;
+                       height: 10%;
+                       font-weight: bold;
+                       font-family: Roboto;
+                       font-size: 200%;
+                       margin-left: 1%;
+                       max-width: 30%;
+                       min-width: 30%;
+                       position: relative;
+                       margin-top: 5%;
+                       letter-spacing: 2px;
+                       opacity: 0.7;
+                   }
+
+                   div#titleSong {
+                       -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       filter: brightness(85%);
+                       position: absolute;
+                       z-index: 15;
+                       left: 40%;
+                       right: 40%;
+                       top: 30%;
+                       background-color: white;
+                       width: 20%;
+                       height: 10%;
+                       opacity: 0.5;
+                       border-radius: 10px 10px 0px 0px;
+                   }
+
+                   p#titleText {
+                       transition: letter-spacing 2s;
+                       opacity: 1;
+                       left: 0%;
+                       text-transform: uppercase;
+                       z-index: 45;
+                       background-color: rgba(0,0,0,0.5);
+                       position: absolute;
+                       color: white;
+                       font-weight: bold;
+                       font-family: Roboto;
+                       width: 100%;
+                       top: 15%;
+                       margin-top: 12%;
+                       font-size: 250% !important;
+                       letter-spacing: 3px;
+                   }
+
+                   p#artist {
+                       border-radius: 0px 0px 10px 10px;
+                       background-color: rgba(255,255,255,0.5);
+                       text-transform: uppercase;
+                       z-index: 40;
+                       position: absolute;
+                       color: rgba(46, 46, 59,1);
+                       left: 35%;
+                       right: 36%;
+                       font-weight: 700;
+                       right: 30%;
+                       letter-spacing: 5px;
+                       padding: 1%;
+                       font-family: Roboto;
+                       width: 30%;
+                       top: 34.65%;
+                       margin-top: 3%;
+                       margin-bottom: 2%;
+                       font-size: 200%;
+                       min-height: 12px;
+                   }
+
+                   div#titleSong {
+                       -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+                       filter: brightness(85%);
+                       position: absolute;
+                       z-index: 15;
+                       left: 4 0%;
+                       right: 40%;
+                       top: 56%;
+                       background-color: rgba(255,255,255, 0) !important;
+                       width: 0%;
+                       height: 0%;
+                       opacity: 0;
+                       border-radius: 10px 10px 0px 0px;
+                   }
+
+                   .current a {
+                       border: none;
+                       background-color: #E1785A;
+                       backface-visibility: hidden;
+                       color: white;
+                       display: block;
+                       padding: 0.5em 1em;
+                       position: relative;
+                       text-align: center;
+                       text-decoration: none;
+                   }
+
+                   #seekBar {
+                       z-index: 50;
+                       border-radius: 20px 20px 20px 20px;
+                       opacity: 1;
+                       position: absolute;
+                       top: 60.2%;
+                       left: 20%;
+                       right: 43%;
+                       width: 60%;
+                       display: flex;
+                       height: 20px;
+                       background-color: rgba(255,255,255,0.8);
+                       cursor: pointer;
+                   }
+
+                   #fill {
+                       height: 20px;
+                       background-color: rgba(46, 46, 59,1);
+                       border-radius: 20px 20px 20px 20px;
+                   }
+
+                   #nowplaying {
+                       background-color: rgba(255,255,255,0.5);
+                       font-family: Roboto;
+                       color: red;
+                       left: -1%;
+                       width: 50%;
+                       font-weight: bold;
+                       font-size: 70%;
+                       margin-top: 0%;
+                       position: relative;
+                       transition: letter-spacing 2s;
+                   }
+
+                   #nextSongTitle {
+                       width: 0%;
+                       opacity: 0;
+                       height: 0%;
+                   }
+
+                   #preSongTitle {
+                       opacity: 0;
+                       width: 0%;
+                       height: 0%;
+                   }
+               }
+    </style>
+</head>
+
+<body style="" onload="openPage()">
+    <div id="container">
+        <center>
+           <a href="index.html">
+                <img class="logo" src="logo.png" ;>
+            </a>
+         
+        </center>
+        <center>
+            <div id="openNav">
+                <i onclick="nav()" class="fas fa-bars"></i>
+            </div>
+            <div id="nav">
+                <i onclick="closeNav()" class="fas fa-times"></i>
+                <ul id="navMenu">
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li id="liCurrent"> <a href="music.html">MUSIC  </a></li>
+
+                </ul>
+            </div>
+            <div id="seekBar">
+                <div id="fill"></div>
+                <div id="handler"></div>
+            </div>
+            <div id="artwork">
+
+            </div>
+
+            <center>
+                <div id="bg">
+                    <div id="titleSong">
+
+                    </div>
+
+                    <p id="titleText">
+                    </p>
+                    <p id="artist"></p>
+
+
+                    <div id="blackplayer"></div>
+
+                    <button class="adjust" onclick="preSong()"><i class="fas fa-backward"></i> Pre</button>
+                    <button id="playpause" class="adjust" onclick="playsong()">Play <i class="fas fa-play-circle"></i></button>
+                    <button class="adjust" onclick="nextSong()">Next <i class="fas fa-forward"></i></button>
+
+
+                    <center>
+                        <div onclick="nextSong()" id="nextSongTitle"></div>
+                        <div onclick="preSong()" id="preSongTitle"></div>
+                    </center>
+                </div>
+
+            </center>
+
+
+
+
+        </center>
+
+      
+            <script type="text/javascript">
+                var z = 0;
+                var  howManyTimes= 4000;
+                function f() {
+                    
+                    if (z % 2 != 0) {
+                        howManyTimes++;
+                        $('#nowplaying').css('letter-spacing', '4px');
+                      
+                        $('#bg').css('filter', 'hue-rotate(0deg)');
+                    } else {
+                        $('#nowplaying').css('letter-spacing', '1px');
+                        
+                        $('#bg').css('filter', 'hue-rotate(40deg)');
+                    }
+                    
+                    z++;
+                    if (z < howManyTimes) {
+                        mytimeout=setTimeout(f, 1500);
+                    }
+                }
+                var songs = ["music/1.mp3", "music/2.mp3","music/3.mp3","music/4.mp3","music/5.mp3","music/6.mp3","music/7.mp3","music/8.mp3","music/9.mp3","music/10.mp3"];
+
+                let songID = -1;
+                if (document.URL.split("?")[1] == null) {
+                    songID = 0;
+                } else {
+                    let pattern = document.URL.split("?")[1];
+                    songID = pattern.split("=")[1];
+                }
+               
+                var currentSong = 0;
+               
+               
+                
+                var song = new Audio();
+
+                var button = document.getElementById('playpause');
+                var title = document.getElementById('titleText');
+                var bg = document.getElementById('bg');
+
+                function playsong() {
+                    if (songID != -1) {
+                        currentSong = songID;
+                        songID = -1;
+                    } 
+                    song.src = songs[currentSong];
+                    preSongTitle();
+                    nextSongTitle();
+                    
+                    song.play();
+        
+
+                    $('#seekBar').css('opacity', '1');
+                    $('button#playpause').attr('onclick', 'playorpausesong()');
+                    if (currentSong == 0) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>NGAY NAO';
+                        document.getElementById('artist').innerText = "CA HOI HOANG";
+                        $('#artwork').css('background-image', 'url("music/1.jpg")');
+                        bg.style.background = '#ffefba';
+                        bg.style.background = '-webkit-linear-gradient(to right, #ffefba, #ffffff)';
+                        bg.style.background = 'linear-gradient(to right, #ffefba, #ffffff)';
+                    }
+                    if (currentSong == 1) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>EM DAO NAY';
+                        document.getElementById('artist').innerText = "NGOT";
+                        $('#artwork').css('background-image', 'url("music/2.jpg")');
+                        $('div#bg').css("background", "#ee9ca7");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #ee9ca7, #ffdde1)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #ee9ca7, #ffdde1)');
+                    }
+                    if (currentSong == 2) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>VA THE LA HET';
+                        document.getElementById('artist').innerText = "chillies band";
+                        $('#artwork').css('background-image', 'url("music/3.jpg")');
+                        $('div#bg').css("background", "#bdc3c7");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #bdc3c7, #2c3e50)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #bdc3c7, #2c3e50)');
+                    }
+                    if (currentSong == 3) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>VI ANH VAN';
+                        document.getElementById('artist').innerText = "HOANG DUNG";
+                        $('#artwork').css('background-image', 'url("music/4.jpg")');
+                        $('div#bg').css("background", "#23074d");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #23074d, #cc5333)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #23074d, #cc5333)');
+                    }
+                    if (currentSong == 4) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>SOMEWHERE ONLY WE KNOW';
+                        document.getElementById('artist').innerText = "KEANE";
+                        $('#artwork').css('background-image', 'url("music/5.jpg")');
+                        $('div#bg').css("background", "#e1eec3");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #e1eec3, #f05053)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #e1eec3, #f05053)');
+                    }
+                    if (currentSong == 5) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>VA THE GIOI DA MAT DI MOT NGUOI CO DON';
+                        document.getElementById('artist').innerText = "MARZUZ";
+                        $('#artwork').css('background-image', 'url("music/6.jpg")');
+                        $('div#bg').css("background", "#dae2f8");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #dae2f8, #d6a4a4)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #dae2f8, #d6a4a4)');
+                    }
+                    if (currentSong == 6) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>BUONG TAY EM RA';
+                        document.getElementById('artist').innerText = "Ego x RoyP";
+                        $('#artwork').css('background-image', 'url("music/7.jpg")');
+                        $('div#bg').css("background", "#c21500");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #c21500, #ffc500)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #c21500, #ffc500)');
+                    }
+                    if (currentSong == 7) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>BONG HOA CHANG THUOC VE TA';
+                        document.getElementById('artist').innerText = "VIET";
+                        $('#artwork').css('background-image', 'url("music/8.jpg")');
+                        $('div#bg').css("background", "#000000");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #000000, #e74c3c)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #000000, #e74c3c)');
+                    }
+                    if (currentSong == 8) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>LANG THOI DUNG MUA';
+                        document.getElementById('artist').innerText = "HAI SAM";
+                        $('#artwork').css('background-image', 'url("music/9.jpg")');
+                        $('div#bg').css("background", "#0f2027");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #0f2027, #203a43, #2c5364)');
+                    }
+                    if (currentSong == 9) {
+                        title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>RAINY DAYS AND MONDAYS';
+                        document.getElementById('artist').innerText = "The Carpenters";
+                        $('#artwork').css('background-image', 'url("music/10.gif")');
+
+                        $('div#bg').css("background", "#b92b27");
+                        $('div#bg').css('background', '-webkit-linear-gradient(to right, #b92b27, #1565c0)');
+                        $('div#bg').css('background', 'linear-gradient(to right, #b92b27, #1565c0)');
+                    }
+                    f();
+                    title.style['font-size'] = '13px';
+                    button.innerHTML = "Playing " + '<i class="fas fa-play"></i>';
+
+                }
+
+                song.addEventListener('ended', function () {
+                    currentSong++;
+                    if (currentSong == 10) {
+                        currentSong = 0;
+                    }
+                    playsong();
+                });
+                function playorpausesong() {
+                    if (song.paused) {
+                        song.play();
+                        preSongTitle();
+                        nextSongTitle();
+                       f();
+                        title.style['font-size'] = '13px';
+                        button.innerHTML = "Playing " + '<i class="fas fa-play"></i>';
+                    } else if (!song.paused) {
+                        clearTimeout(mytimeout);
+                        clearTimeout(mytimeout);
+                                title.innerHTML = '<p id="nowplaying">NOW PLAYING</p>BONG HOA CHANG THUOC VE TA';
+                        song.pause();
+                        button.innerHTML = "Paused " + '<i class="fas fa-pause"></i>';
+                    }
+                }
+                let nextSong = () => {
+                    console.log(songID);
+                    console.log(currentSong);
+                    currentSong++;
+                    if (currentSong == 10) {
+                        currentSong = 0;
+                    }
+                    playsong(); 
+                }
+                let preSong = () => {
+                    currentSong = currentSong - 1;
+                    if (currentSong == -1) {
+                        currentSong = 9;
+                    }
+                  
+                    playsong();
+                }
+
+
+                var bg = document.getElementById('bg');
+                var titleTexteffect = document.getElementById('#titleSong');
+               
+                var fillBar = document.getElementById('fill');
+                song.addEventListener('timeupdate', function () {
+                    var pos = song.currentTime / song.duration;
+                    fillBar.style.width = pos * 100 + "%";
+;                   
+                });
+
+              
+                let nextSongTitle = () => {
+                    var nextSongNum = currentSong + 1;
+                    
+                    if (currentSong == 9) {
+                        nextSongNum = 0;
+                    }
+                    if (nextSongNum == 0) {
+                        $('#nextSongTitle').html('NGAY NAO - CA HOI HOANG <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 1) {
+                        $('#nextSongTitle').html('EM DAO NAY - NGOT <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 2) {
+                        $('#nextSongTitle').html('VA THE LA HET - CHILLIES BAND <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 3) {
+                        $('#nextSongTitle').html('VI ANH VAN - HOANG DUNG <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 4) {
+                        $('#nextSongTitle').html('SOMEWHERE ONLY WE KNOW - KEANE <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 5) {
+                        $('#nextSongTitle').html('VA THE GIOI DA MAT DI MOT NGUOI CO DON - MARZUS <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 6) {
+                        $('#nextSongTitle').html('BUONG TAY EM RA - EGO X ROYP <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 7) {
+                        $('#nextSongTitle').html('BONG HOA CHANG THUOC VE TA - VIET <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 8) {
+                        $('#nextSongTitle').html('LANH THOI DUNG MUA - HAI SAM <i class="fas fa-angle-double-right"></i>');
+                    }
+                    if (nextSongNum == 9) {
+                        $('#nextSongTitle').html('RAINY DAYS AND MONDAYS - THE CARPENTERS <i class="fas fa-angle-double-right"></i>');
+                    }
+                }
+                var preSongtitleSingle = document.getElementById('preSongTitle');
+                let preSongTitle = () => {
+                    var preSongNum = currentSong - 1;
+
+
+                    if (preSongNum == 0) {
+                        $('preSongTitle').html('<i class="fas fa-angle-double-left"></i> NGAY NAO - CA HOI HOANG');
+                       
+                    }
+                    if (preSongNum == 1) {
+                        $('preSongTitle').html('<i class="fas fa-angle-double-left"></i> EM DAO NAY - NGOT');
+                       
+                    }
+                    if (preSongNum == 2) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> VA THE LA HET - CHILLIES BAND');
+                    }
+                    if (preSongNum == 3) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> VI ANH VAN - HOANG DUNG');
+                    }
+                    if (preSongNum == 4) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> SOMEWHERE ONLY WE KNOW - KEANE');
+                    }
+                    if (preSongNum == 5) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> VA THE GIOI DA MAT DI MOT NGUOI CO DON - MARZUS');
+                    }
+                    if (preSongNum == 6) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> BUONG TAY EM RA - EGO X ROYP');
+                    }
+                    if (preSongNum == 7) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> BONG HOA CHANG THUOC VE TA - VIET');
+                    }
+                    if (preSongNum == 8) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> LANH THOI DUNG MUA - HAI SAM');
+                    }
+                    if (preSongNum == 9 || preSongNum==-1) {
+                        $('#preSongTitle').html('<i class="fas fa-angle-double-left"></i> RAINY DAYS AND MONDAYS - THE CARPENTERS');
+                    }
+                    
+                }
+           
+                   
+                function nav() {
+                    $('#openNav').css('opacity', 0);
+                    $('#nav').css('width', '250px');
+                    $('#nav i').css('opacity', 1);
+                    $('#navMenu').css('font-size', '30px');
+                    $('#navMenu').css('left', '-16%');
+                };
+                let closeNav = () => {
+                    $('#openNav').css('opacity', 1);
+                    $('#nav').css('width', '0px');
+                    $('#nav i').css('opacity', 0);
+                    $('#navMenu').css('font-size', '0px');
+                    $('#navMenu').css('left', '-105%');
+                    
+                };
+                function openPage() {
+                    nav();
+                    playsong();
+                    
+                }
+                $('#openNav').bind('mouseover', function () {
+                    $('#openNav li').css('opacity', 1);
+                   
+                });
+                if (document.documentElement.clientWidth < 800) {
+                    function nav() {
+                        $('#openNav').css('opacity', 0);
+                        $('#nav').css('width', '250px');
+                        $('#nav i').css('opacity', 1);
+                        $('#navMenu').css('font-size', '70px');
+                        $('#navMenu').css('left', '-16%');
+                    };
+                }
+            </script>
+</div>
+</body>
+
+</html>
